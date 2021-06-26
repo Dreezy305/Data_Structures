@@ -11,5 +11,6 @@ function increment() {
 function save() {
   console.log(count);
 }
-
 save();
+
+//render a welcome message
