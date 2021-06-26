@@ -1,7 +1,7 @@
 // document.getElementById("counter").innerHTML = 5;
-let first_count = 5;
-let second_count = 7;
+let myAge = 27;
+let humanDogRatio = 7;
 
-let count = first_count + second_count;
+let myDogAge = myAge * humanDogRatio;
 
-console.log(count);
+console.log(myDogAge);
