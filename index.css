@@ -7,6 +7,16 @@ button {
   color: blue;
   height: 50px;
   width: 150px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 10px 10px 10px 10px;
   border: whitesmoke;
 }
+
+button:hover {
+  background-color: darkblue;
+  width: 200px;
+  border: greenyellow;
+}
+
+/* #increment-btn {
+  background-color: green;
+} */
