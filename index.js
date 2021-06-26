@@ -7,9 +7,10 @@
 // console.log(myDogAge);
 
 let bonusPoints = 50;
+console.log(bonusPoints);
 
 bonusPoints = bonusPoints + 25;
+console.log(bonusPoints);
 
 bonusPoints = bonusPoints - 25;
-
 console.log(bonusPoints);
