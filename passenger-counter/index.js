@@ -4,6 +4,10 @@
 // change the count-el in the html and reflect the new count
 // define event listener inside the html
 
+let count_El = document.getElementById("counter");
+let count = 0;
 function increment() {
-  console.log("button was clicked");
+  count = count + 1;
+  count_El.innerText = count;
+  console.log("button was clicked : ", count, " time(s)");
 }
