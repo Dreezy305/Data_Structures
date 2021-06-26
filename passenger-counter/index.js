@@ -6,3 +6,10 @@ function increment() {
   count_El.innerHTML = count;
   console.log("button was clicked : ", count, " time(s)");
 }
+
+//create a function for save button
+function save() {
+  console.log(count);
+}
+
+save();

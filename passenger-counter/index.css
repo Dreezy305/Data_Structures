@@ -20,3 +20,14 @@ button:hover {
 /* #increment-btn {
   background-color: green;
 } */
+
+#save-btn {
+  color: green;
+  width: 150px;
+  border: green;
+}
+
+#save-btn:hover {
+  width: 200px;
+  border: yellow;
+}
