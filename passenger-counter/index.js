@@ -18,6 +18,8 @@ function save() {
   save_El.textContent += count_dash;
   if (save_El.textContent) {
     count_El.textContent = 0;
+    count = 0;
+    count = count + 1;
   }
   console.log(count);
 }
