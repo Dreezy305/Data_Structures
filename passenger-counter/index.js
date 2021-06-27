@@ -17,6 +17,9 @@ function save() {
   // create a variable that contains both count and dash separator
   // render the variable in the save-el using the inner text
   // make sure to not delete the existing content of the paragraph
+  let dash = "-";
+  let count_dash = count + dash;
+  save_El.innerHTML = "Previous enteries: " + count_dash;
 }
 save();
 
