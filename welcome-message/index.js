@@ -4,4 +4,4 @@ let WelcomeEl = document.getElementById("welcome-el");
 let MyName = "Idris";
 let greeting = "welcome back, How was your trip";
 
-WelcomeEl.innerHTML = Myname + greeting;
+WelcomeEl.innerHTML = greeting + MyName;
