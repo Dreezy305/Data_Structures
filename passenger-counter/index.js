@@ -18,7 +18,7 @@ function save() {
   // make sure to not delete the existing content of the paragraph
   let dash = " - ";
   let count_dash = count + dash;
-  save_El.innerHTML = "Previous enteries: " + count_dash;
+  save_El.innerText += count_dash;
   console.log(count);
 }
 save();
