@@ -7,7 +7,7 @@ console.log(save_El);
 let count = 0;
 function increment() {
   count += 1;
-  count_El.innerHTML = count;
+  count_El.textContent = count;
   console.log("button was clicked : ", count, " time(s)");
 }
 
