@@ -16,6 +16,9 @@ function save() {
   let dash = " - ";
   let count_dash = count + dash;
   save_El.textContent += count_dash;
+  if (save_El.textContent) {
+    count_El.textContent = 0;
+  }
   console.log(count);
 }
 save();
