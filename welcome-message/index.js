@@ -6,4 +6,4 @@ let greeting = "welcome back, How was your trip";
 
 WelcomeEl.innerHTML = greeting + "" + MyName;
 
-WelcomeEl.innerHTML = WelcomeEl.innerHTML + "you";
+WelcomeEl.innerHTML += "you";
