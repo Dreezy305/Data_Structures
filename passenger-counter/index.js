@@ -15,7 +15,7 @@ function increment() {
 function save() {
   let dash = " - ";
   let count_dash = count + dash;
-  save_El.innerText += count_dash;
+  save_El.textContent += count_dash;
   console.log(count);
 }
 save();
