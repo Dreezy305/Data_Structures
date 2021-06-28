@@ -1,9 +1,4 @@
-let _name = "Linda";
-let greeting = "Hi there";
+let first_card = 5;
+let second_card = 9;
 
-function Welcome() {
-  let greetings = greeting + "," + " " + _name + "!";
-  console.log(greetings);
-}
-
-Welcome();
+let sum = first_card + second_card;
