@@ -12,7 +12,7 @@ console.log(Sum_El);
 let card_el = document.getElementById("card-el");
 console.log(card_el);
 
-function Startgame() {
+function Rendergame() {
   Sum_El.textContent = "Sum: " + sum;
   card_el.textContent = "cards: " + first_card + " , " + second_card;
   if (sum <= 20) {
@@ -38,5 +38,5 @@ function Newcard() {
   console.log("Drawing a new card from deck");
   let card = 10;
   sum += card;
-  Startgame();
+  Rendergame();
 }
