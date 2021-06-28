@@ -23,4 +23,5 @@ button {
   height: 50px;
   background: goldenrod;
   border-radius: 5px;
+  text-transform: uppercase;
 }
