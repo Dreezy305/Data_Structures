@@ -36,7 +36,7 @@ function Startgame() {
 
 function Newcard() {
   console.log("Drawing a new card from deck");
-  let card = 6;
+  let card = 10;
   sum += card;
   Startgame();
 }
