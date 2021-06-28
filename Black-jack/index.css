@@ -24,4 +24,6 @@ button {
   background: goldenrod;
   border-radius: 5px;
   text-transform: uppercase;
+  color: #016f32;
+  font-weight: bold;
 }
