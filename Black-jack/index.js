@@ -34,6 +34,10 @@ function Rendergame() {
   }
 }
 
+function Startgame() {
+  Rendergame();
+}
+
 function Newcard() {
   console.log("Drawing a new card from deck");
   let card = 10;
