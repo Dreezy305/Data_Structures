@@ -1,6 +1,19 @@
+body {
+  background-color: lightgreen;
+  align-items: center;
+}
+
 h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 32px;
+  color: lightsalmon;
+}
+
+p {
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  font-weight: light;
+  font-size: 24px;
 }
