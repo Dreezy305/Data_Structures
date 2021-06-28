@@ -33,3 +33,7 @@ function Startgame() {
     isAlive = false;
   }
 }
+
+function Newcard() {
+  console.log("Drawing a new card from deck");
+}
