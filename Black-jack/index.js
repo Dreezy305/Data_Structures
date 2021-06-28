@@ -8,11 +8,13 @@ let Message_El = document.getElementById("message-el");
 let Sum_El = document.getElementById("sum-el");
 // let Sum_El = document.querySelector(".sum-el");
 console.log(Sum_El);
-
 // document.Queryselectorall("")
+let card_el = document.getElementById("card-el");
+console.log(card_el);
 
 function Startgame() {
   Sum_El.textContent = "Sum: " + sum;
+  card_el.textContent = "cards: " + first_card + " , " + second_card;
   if (sum <= 20) {
     message = "Do you want to draw a new card? ";
     Message_El.textContent = message;
