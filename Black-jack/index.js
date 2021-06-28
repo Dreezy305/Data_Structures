@@ -6,6 +6,7 @@ let message = "";
 let sum = first_card + second_card;
 let Message_El = document.getElementById("message-el");
 let Sum_El = document.getElementById("sum-el");
+// let Sum_El = document.querySelector(".sum-el");
 console.log(Sum_El);
 
 // document.Queryselectorall("")
