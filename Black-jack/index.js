@@ -36,4 +36,10 @@ function Startgame() {
 
 function Newcard() {
   console.log("Drawing a new card from deck");
+  let card_1 = 6;
+  let card_2 = 8;
+  sum = card_1 + card_2;
+  Sum_El.textContent = "Sum: " + sum;
+  card_el.textContent = "cards: " + first_card + " , " + second_card;
+  Startgame();
 }
