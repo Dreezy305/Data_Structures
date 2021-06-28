@@ -1,19 +1,15 @@
-let myPoints = 3;
+const error_message = document.getElementById("error");
 
-// create two functions, add3points() and remove1point()
-// have them add to / remove from myPoints variable.
-
-function addToPoints() {
-  myPoints += 3;
+function ErrorMessage() {
+  message = "Something went wrong";
+  if (message) {
+    error_message.textContent = message;
+  }
 }
 
-function removePoints() {
-  myPoints -= 1;
+function RemoveMessage() {
+  remove_message = "";
+  if (message) {
+    error_message.textContent = remove_message;
+  }
 }
-
-addToPoints();
-addToPoints();
-addToPoints();
-removePoints();
-removePoints();
-console.log(myPoints);
