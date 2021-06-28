@@ -12,4 +12,7 @@ function removePoints() {
 }
 
 addToPoints();
+addToPoints();
+addToPoints();
+removePoints();
 removePoints();
