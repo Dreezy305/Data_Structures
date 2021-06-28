@@ -11,27 +11,27 @@ console.log(num2);
 function Sum() {
   sum_result = num1 + num2;
   if (sum_result) {
-    result.textContent = sum_result;
+    result.textContent = "Result: " + sum_result;
   }
 }
 
 function Subtract() {
   sub_result = num1 - num2;
   if (sub_result) {
-    result.textContent = sub_result;
+    result.textContent = "Result: " + sub_result;
   }
 }
 
 function Divide() {
   div_result = num1 / num2;
   if (div_result) {
-    result.textContent = div_result;
+    result.textContent = "Result: " + div_result;
   }
 }
 
 function Multiply() {
   prod_result = num1 * num2;
   if (prod_result) {
-    result.textContent = prod_result;
+    result.textContent = "Result: " + prod_result;
   }
 }
