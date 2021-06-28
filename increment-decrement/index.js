@@ -16,3 +16,4 @@ addToPoints();
 addToPoints();
 removePoints();
 removePoints();
+console.log(myPoints);
