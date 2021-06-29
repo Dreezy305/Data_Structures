@@ -12,3 +12,11 @@ function getTime() {
 }
 let fastTime = getTime();
 console.log(fastTime);
+
+function getTotalTime() {
+  total = player1 + player2;
+  return total;
+}
+
+let TotalTime = getTotalTime();
+console.log(TotalTime);
