@@ -1,4 +1,4 @@
-// arrays -  ordered list of items
+// arrays -  ordered list of items - composite / complex data
 let featuredPosts = [
   "check out my netflix",
   "here is the code for my project",
