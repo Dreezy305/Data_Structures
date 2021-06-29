@@ -16,8 +16,8 @@ console.log(card_el);
 
 // function that gets random card also known as fuction declaration
 function getRandom(min, max) {
-  min = 2;
-  max = 11;
+  min = 1;
+  max = 6;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
