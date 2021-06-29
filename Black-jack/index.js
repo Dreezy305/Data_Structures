@@ -51,6 +51,6 @@ function Newcard() {
   let card = 10;
   cards.push(card);
   console.log(cards);
-  sum += card;
+  sum += " " + card;
   Rendergame();
 }
