@@ -6,3 +6,5 @@ let featuredPosts = [
 ];
 
 let experience = [1, 2, 3, 4, 5, 6];
+
+let mySelf = [{ firstname: "idris", age: 20, pizza: true }];
