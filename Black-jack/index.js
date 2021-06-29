@@ -43,6 +43,8 @@ function Startgame() {
 function Newcard() {
   console.log("Drawing a new card from deck");
   let card = 10;
+  cards.push(card);
+  console.log(cards);
   sum += card;
   Rendergame();
 }
