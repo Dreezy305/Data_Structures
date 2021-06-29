@@ -22,3 +22,5 @@ function getTotalTime() {
 
 let TotalTime = getTotalTime();
 console.log(TotalTime);
+
+// math.random returns random numbers between 0 and 1
