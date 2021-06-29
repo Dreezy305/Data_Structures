@@ -1,5 +1,5 @@
-let first_card = 10;
-let second_card = 5;
+let first_card = getRandom();
+let second_card = getRandom();
 let cards = [first_card, second_card]; //cards array goes here
 let hasBlackJack = false;
 let isAlive = true;
@@ -14,6 +14,7 @@ let card_el = document.getElementById("card-el");
 console.log(card_el);
 
 // function that gets random card
+function getRandom() {}
 
 function Rendergame() {
   card_el.textContent = "cards: ";
@@ -49,7 +50,7 @@ function Startgame() {
 
 function Newcard() {
   console.log("Drawing a new card from deck");
-  let card = 10;
+  let card = getRandom();
   cards.push(card);
   console.log(cards);
   sum += " " + card;
