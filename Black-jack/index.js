@@ -15,10 +15,18 @@ let card_el = document.getElementById("card-el");
 console.log(card_el);
 
 // function that gets random card also known as fuction declaration
-function getRandom(min, max) {
-  min = 1;
-  max = 6;
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandom() {
+  // min = 1;
+  // max = 11;
+  // return Math.floor(Math.random() * (max - min + 1)) + min;
+  let randomNum = Math.floor(Math.random() * 13) + 1;
+  if (randomNum > 10) {
+    return 10;
+  } else if (randomNum === 1) {
+    return 11;
+  } else {
+    return randomNum;
+  }
 }
 
 function Rendergame() {
