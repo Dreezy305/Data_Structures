@@ -17,8 +17,9 @@ console.log(card_el);
 function Rendergame() {
   card_el.textContent = "cards: ";
   // renders first and second cards by default
-  for (let i = 0; i < array.length; i++) {
-    card_vals += cards[i];
+  for (let i = 0; i < cards.length; i++) {
+    card_el.textContent += " " + cards[i];
+    console.log(card_el.textContent);
   }
 
   Sum_El.textContent = "Sum: " + sum;
