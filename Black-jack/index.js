@@ -3,7 +3,6 @@ let second_card = 5;
 let cards = [first_card, second_card]; //cards array goes here
 let hasBlackJack = false;
 let isAlive = true;
-
 let message = "";
 let sum = first_card + second_card;
 let Message_El = document.getElementById("message-el");
