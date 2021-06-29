@@ -1,5 +1,7 @@
 let player1 = 102;
 let player2 = 107;
+let randomNum = Math.random() * 10;
+console.log(randomNum);
 
 function getTime() {
   if (player1 < player2) {
