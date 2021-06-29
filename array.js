@@ -7,4 +7,11 @@ let featuredPosts = [
 
 let experience = [1, 2, 3, 4, 5, 6];
 
-let mySelf = [{ firstname: "idris", age: 20, pizza: true }];
+let mySelf = ["idris", 20, true];
+
+let newPost = "i love tv series";
+
+featuredPosts.push(newPost);
+console.log(featuredPosts);
+featuredPosts.pop(newPost);
+console.log(featuredPosts);
