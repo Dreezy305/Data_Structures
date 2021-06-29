@@ -1,8 +1,14 @@
-//counting in arrays
+let player1 = 102;
+let player2 = 107;
 
-let messages = ["hey", "hello", "hi", "how", "hiyyah"];
-let greetingEl = document.getElementById("greeting-el");
-
-for (let i = 0; i < messages.length; i++) {
-  greetingEl.textContent += messages[i] + " ";
+function getTime() {
+  if (player1 < player2) {
+    return player1;
+  } else if (player2 < player1) {
+    return player2;
+  } else {
+    return player1;
+  }
 }
+
+getTime();
