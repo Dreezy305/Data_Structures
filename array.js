@@ -1,4 +1,6 @@
 //counting in arrays
-for (let count = 10; count < 21; count += 1) {
-  console.log(count);
+
+let messages = ["hey", "hello", "hi", "how", "hiyyah"];
+for (let i = 0; i < messages.length; i++) {
+  console.log(messages[i]);
 }
