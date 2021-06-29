@@ -3,6 +3,7 @@ let second_card = 5;
 let cards = [first_card, second_card]; //cards array goes here
 let hasBlackJack = false;
 let isAlive = true;
+
 let message = "";
 let sum = first_card + second_card;
 let Message_El = document.getElementById("message-el");
@@ -16,7 +17,7 @@ console.log(card_el);
 function Rendergame() {
   // renders first and second cards by default
   Sum_El.textContent = "Sum: " + sum;
-  card_el.textContent = "cards: " + cards[0] + " , " + cards[1];
+  card_el.textContent = "cards: ";
   if (sum <= 20) {
     message = "Do you want to draw a new card? ";
     Message_El.textContent = message;
