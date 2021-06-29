@@ -14,7 +14,9 @@ let card_el = document.getElementById("card-el");
 console.log(card_el);
 
 // function that gets random card
-function getRandom() {}
+function getRandom() {
+  return 5;
+}
 
 function Rendergame() {
   card_el.textContent = "cards: ";
@@ -53,6 +55,6 @@ function Newcard() {
   let card = getRandom();
   cards.push(card);
   console.log(cards);
-  sum += " " + card;
+  sum += card;
   Rendergame();
 }
