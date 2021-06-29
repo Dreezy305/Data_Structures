@@ -1,4 +1,4 @@
 //counting in arrays
-for (let count = 1; count < 11; count += 2) {
+for (let count = 1; count < 11; count += 1) {
   console.log(count);
 }
