@@ -13,6 +13,8 @@ console.log(Sum_El);
 let card_el = document.getElementById("card-el");
 console.log(card_el);
 
+// function that gets random card
+
 function Rendergame() {
   card_el.textContent = "cards: ";
   // renders first and second cards by default
