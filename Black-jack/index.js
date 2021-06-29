@@ -10,6 +10,7 @@ let Sum_El = document.getElementById("sum-el");
 // let Sum_El = document.querySelector(".sum-el");
 console.log(Sum_El);
 // document.Queryselectorall("")
+
 let card_el = document.getElementById("card-el");
 console.log(card_el);
 
