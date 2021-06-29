@@ -10,5 +10,5 @@ function getTime() {
     return player1;
   }
 }
-
-getTime();
+let fastTime = getTime();
+console.log(fastTime);
