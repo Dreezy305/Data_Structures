@@ -1,6 +1,8 @@
 let first_card = 10;
 let second_card = 5;
 let cards = [first_card, second_card];
+// creating cards array
+
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
