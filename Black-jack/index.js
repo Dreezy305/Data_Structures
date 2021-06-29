@@ -13,7 +13,7 @@ console.log(Sum_El);
 let card_el = document.getElementById("card-el");
 console.log(card_el);
 
-// function that gets random card
+// function that gets random card also known as fuction declaration
 function getRandom() {
   return 5;
 }
