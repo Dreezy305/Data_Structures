@@ -17,6 +17,10 @@ console.log(card_el);
 function Rendergame() {
   card_el.textContent = "cards: ";
   // renders first and second cards by default
+  for (let i = 0; i < array.length; i++) {
+    card_vals += cards[i];
+  }
+
   Sum_El.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card? ";
