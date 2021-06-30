@@ -1,6 +1,2 @@
-let hasFinished = true;
-let get_certified = true;
-
-function generate_certificate() {
-  console.log("Generating....");
-}
+// Objects - store data in-depth - composite/ complex data type
+//key-value pairs
