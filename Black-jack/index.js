@@ -63,9 +63,15 @@ function Startgame() {
 
 function Newcard() {
   console.log("Drawing a new card from deck");
-  let card = getRandom();
-  cards.push(card);
-  console.log(cards);
-  sum += card;
-  Rendergame();
+  if (isAlive === true && hasBlackJack === false) {
+    let card = getRandom();
+    cards.push(card);
+    console.log(cards);
+    sum += card;
+    Rendergame();
+  } else {
+    message = "You are out of the game ";
+    Message_El.textContent = message;
+    console.log(message);
+  }
 }
