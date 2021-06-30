@@ -67,9 +67,5 @@ function Newcard() {
   cards.push(card);
   console.log(cards);
   sum += card;
-  if (sum < 21) {
-    Rendergame();
-  } else {
-    console.log("You cannot play game at this time");
-  }
+  Rendergame();
 }
