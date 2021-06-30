@@ -7,4 +7,6 @@ let course = {
   creator: "harald borgen",
   length: "7 hours",
   level: 3,
+  isFree: true,
+  tags: ["html", "css", "js"],
 };
