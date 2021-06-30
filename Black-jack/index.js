@@ -18,7 +18,7 @@ let player = {
 };
 
 let Player_El = document.getElementById("player-el");
-Player_El.textContent = player_name + ": $" + player_chip;
+Player_El.textContent = player.Name + ": $" + player.chip;
 
 // function that gets random card also known as fuction declaration
 function getRandom() {
