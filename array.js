@@ -11,4 +11,6 @@ let course = {
   tags: ["html", "css", "js"],
 };
 
-console.log(course.length);
+console.log(course.tags[2]);
+// use dot notation to access object values
+// use bracket notation to access object values
