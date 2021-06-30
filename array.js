@@ -34,9 +34,10 @@ function showNations() {
 }
 
 function randomHands(min, max) {
-  let random_hand = Math.random();
-  return random_hand;
+  let random_handIndex = Math.floor(Math.random() * 3);
+  return hands[random_handIndex];
 }
+
 console.log(randomHands());
 showNations();
 logData();
