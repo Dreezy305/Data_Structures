@@ -12,6 +12,14 @@ console.log(Sum_El);
 let card_el = document.getElementById("card-el");
 console.log(card_el);
 
+let player = {
+  Name: "Dreezy",
+  chip: 145,
+};
+
+let Player_El = document.getElementById("player-el");
+Player_El.textContent = player_name + ": $" + player_chip;
+
 // function that gets random card also known as fuction declaration
 function getRandom() {
   let randomNum = Math.floor(Math.random() * 13) + 1;
