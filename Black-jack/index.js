@@ -1,5 +1,3 @@
-let first_card = getRandom();
-let second_card = getRandom();
 let cards = []; //cards array goes here
 let hasBlackJack = false;
 let isAlive = false;
@@ -56,6 +54,10 @@ function Rendergame() {
 
 function Startgame() {
   isAlive = true;
+  let first_card = getRandom();
+  let second_card = getRandom();
+  cards = [first_card, second_card];
+  sum = first_card + second_card;
   Rendergame();
 }
 
