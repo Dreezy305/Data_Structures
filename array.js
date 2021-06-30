@@ -4,7 +4,12 @@ let personObject = {
   country: "germany",
 };
 
-let large_countries = ["china", "india", "usa", "indonesia", "pakistan"];
+let large_countries = ["tuvalu", "india", "usa", "indonesia", "monaco"];
+large_countries.pop(4);
+large_countries.push("pakistan");
+large_countries.shift();
+large_countries.unshift("china");
+console.log(large_countries);
 
 function logData() {
   person_info =
@@ -20,7 +25,9 @@ function logData() {
 
 function showNations() {
   for (let i = 0; i < large_countries.length; i++) {
-    console.log("--> " + large_countries[i]);
+    countries = large_countries[i];
+
+    console.log("--> " + countries);
   }
 }
 showNations();
