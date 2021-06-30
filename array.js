@@ -11,6 +11,8 @@ large_countries.shift();
 large_countries.unshift("china");
 console.log(large_countries);
 
+let hands = ["rock", "paper", "scissors"];
+
 function logData() {
   person_info =
     personObject.Name +
@@ -30,5 +32,11 @@ function showNations() {
     console.log("--> " + countries);
   }
 }
+
+function randomHands(min, max) {
+  let random_hand = Math.random();
+  return random_hand;
+}
+console.log(randomHands());
 showNations();
 logData();
