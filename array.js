@@ -65,5 +65,5 @@ sortFruits();
 let OpenBtn = document.getElementById("open-btn");
 
 OpenBtn.addEventListener("click", function () {
-  OpenBtn.textContent = "I want to open the box";
+  console.log("I want to open the box");
 });
