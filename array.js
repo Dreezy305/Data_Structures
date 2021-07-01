@@ -41,3 +41,8 @@ function randomHands(min, max) {
 console.log(randomHands());
 showNations();
 logData();
+
+let fruit = ["apple", "orange", "apple", "apple", "orange"];
+
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
