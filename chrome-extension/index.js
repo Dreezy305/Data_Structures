@@ -9,3 +9,5 @@ SaveInput.addEventListener("click", function () {
   myLeads.push(InputEl.value);
   console.log(myLeads);
 });
+
+ListEl.textContent = myLeads;
