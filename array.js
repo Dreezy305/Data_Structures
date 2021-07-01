@@ -58,5 +58,6 @@ function sortFruits() {
     }
   }
 }
-
 sortFruits();
+
+// writing eventlisteners
