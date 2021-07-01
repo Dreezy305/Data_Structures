@@ -52,6 +52,9 @@ function sortFruits() {
     if (fruit[i] === "apple") {
       appleShelf.textContent += " " + fruit[i];
       console.log(appleShelf);
+    } else {
+      orangeShelf.textContent += " " + fruit[i];
+      console.log(orangeShelf);
     }
   }
 }
