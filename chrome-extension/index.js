@@ -10,4 +10,8 @@ SaveInput.addEventListener("click", function () {
   console.log(myLeads);
 });
 
-ListEl.textContent = myLeads;
+for (let i = 0; i < myLeads.length; i++) {
+  const element = myLeads[i];
+  ListEl.textContent = element;
+  console.log(ListEl.textContent);
+}
