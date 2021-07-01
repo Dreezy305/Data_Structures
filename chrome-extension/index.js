@@ -1,6 +1,6 @@
 const SaveInput = document.getElementById("input-btn");
 
-const myLeads = [];
+const myLeads = ["lead.com", "lead1.com", "lead2.com", "lead3.com"];
 const InputEl = document.getElementById("input-el");
 
 SaveInput.addEventListener("click", function () {
