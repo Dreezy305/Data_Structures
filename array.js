@@ -61,3 +61,9 @@ function sortFruits() {
 sortFruits();
 
 // writing eventlisteners
+
+let OpenBtn = document.getElementById("open-btn");
+
+OpenBtn.addEventListener("click", function () {
+  OpenBtn.textContent = "I want to open the box";
+});
