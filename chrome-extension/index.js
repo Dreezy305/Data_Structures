@@ -1,6 +1,6 @@
 const SaveInput = document.getElementById("input-btn");
 
-const myLeads = ["lead.com", "lead1.com", "lead2.com", "lead3.com"];
+const myLeads = ["a", "b", "c", "d"];
 const InputEl = document.getElementById("input-el");
 const ListEl = document.getElementById("list-el");
 
@@ -12,6 +12,6 @@ SaveInput.addEventListener("click", function () {
 
 for (let i = 0; i < myLeads.length; i++) {
   const element = myLeads[i];
-  ListEl.textContent = element;
+  ListEl.innerHTML += "<li>" + element[i] + "</li>";
   console.log(ListEl.textContent);
 }
