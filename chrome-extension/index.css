@@ -34,6 +34,7 @@ button {
   list-style-type: none;
   font-family: "Lucida Sans";
   margin-top: 5px;
+  padding-left: 0;
 }
 
 a {
