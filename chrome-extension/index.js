@@ -12,10 +12,15 @@ function renderLeads() {
   ListEl.innerHTML = ListItems;
 }
 
+function clearInput() {
+  document.getElementById("input-el").value = "";
+}
+
 SaveInput.addEventListener("click", function () {
   console.log("button clicked");
   myLeads.push(InputEl.value);
   console.log(myLeads);
   renderLeads();
   // clear out input field
+  clearInput();
 });
