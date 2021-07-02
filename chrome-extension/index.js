@@ -17,7 +17,7 @@ SaveInput.addEventListener("click", function () {
 let ListItems = "";
 for (let i = 0; i < myLeads.length; i++) {
   ListItems += "<li>" + myLeads[i] + "</li>";
-  ListEl.innerHTML = ListItems;
+
   // ListEl.innerHTML += "<li>" + myLeads[i] + "</li>";
   // create element
   // set text content
@@ -27,3 +27,5 @@ for (let i = 0; i < myLeads.length; i++) {
   // ListEl.append(li);
   // console.log(ListEl.textContent);
 }
+
+ListEl.innerHTML = ListItems;
