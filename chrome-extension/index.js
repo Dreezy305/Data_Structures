@@ -8,7 +8,7 @@ let Links = document.createElement("a");
 function renderLeads() {
   let ListItems = "";
   for (let i = 0; i < myLeads.length; i++) {
-    ListItems += "<li>" + myLeads[i] + "</li>";
+    ListItems += "<li><a href='#' target='blank'>" + myLeads[i] + "</a></li>";
   }
   ListEl.innerHTML = ListItems;
 }
