@@ -17,4 +17,5 @@ SaveInput.addEventListener("click", function () {
   myLeads.push(InputEl.value);
   console.log(myLeads);
   renderLeads();
+  // clear out input field
 });
