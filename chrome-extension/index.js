@@ -10,7 +10,7 @@ function renderLeads() {
     ListItems +=
       "<li><a href='" +
       myLeads[i] +
-      "' target='blank'>" +
+      "' target='_blank'>" +
       myLeads[i] +
       "</a></li>";
 
