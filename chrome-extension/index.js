@@ -11,6 +11,9 @@ SaveInput.addEventListener("click", function () {
 });
 
 for (let i = 0; i < myLeads.length; i++) {
-  ListEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+  // ListEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+  // create element
+  // set text content
+  // append to unordered list
   console.log(ListEl.textContent);
 }
