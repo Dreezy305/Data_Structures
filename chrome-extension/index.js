@@ -3,12 +3,18 @@ const SaveInput = document.getElementById("input-btn");
 const myLeads = [];
 const InputEl = document.getElementById("input-el");
 let ListEl = document.getElementById("list-el");
-let Links = document.createElement("a");
 
 function renderLeads() {
   let ListItems = "";
   for (let i = 0; i < myLeads.length; i++) {
-    ListItems += "<li><a href='#' target='blank'>" + myLeads[i] + "</a></li>";
+    ListItems +=
+      "<li><a href='" +
+      myLeads[i] +
+      "' target='blank'>" +
+      myLeads[i] +
+      "</a></li>";
+
+    console.log(ListItems);
   }
   ListEl.innerHTML = ListItems;
 }
