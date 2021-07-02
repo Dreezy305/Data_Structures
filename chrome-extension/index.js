@@ -2,7 +2,8 @@ const SaveInput = document.getElementById("input-btn");
 
 const myLeads = [];
 const InputEl = document.getElementById("input-el");
-const ListEl = document.getElementById("list-el");
+let ListEl = document.getElementById("list-el");
+let Links = document.createElement("a");
 
 function renderLeads() {
   let ListItems = "";
@@ -11,8 +12,6 @@ function renderLeads() {
   }
   ListEl.innerHTML = ListItems;
 }
-
-let Links = document.createElement("a");
 
 function clearInput() {
   document.getElementById("input-el").value = "";
