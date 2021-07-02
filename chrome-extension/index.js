@@ -9,7 +9,6 @@ function renderLeads() {
   for (let i = 0; i < myLeads.length; i++) {
     ListItems += "<li>" + myLeads[i] + "</li>";
   }
-
   ListEl.innerHTML = ListItems;
 }
 
