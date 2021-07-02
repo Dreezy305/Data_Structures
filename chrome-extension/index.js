@@ -12,6 +12,8 @@ function renderLeads() {
   ListEl.innerHTML = ListItems;
 }
 
+let Links = document.createElement("a");
+
 function clearInput() {
   document.getElementById("input-el").value = "";
 }
