@@ -15,6 +15,8 @@ for (let i = 0; i < myLeads.length; i++) {
   // create element
   // set text content
   // append to unordered list
-  document.createElement();
-  console.log(ListEl.textContent);
+  const li = document.createElement("li");
+  li.textContent = myLeads[i];
+  ListEl.append(li);
+  // console.log(ListEl.textContent);
 }
