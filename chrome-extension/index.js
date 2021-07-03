@@ -3,7 +3,7 @@ const SaveInput = document.getElementById("input-btn");
 const myLeads = [];
 const InputEl = document.getElementById("input-el");
 let ListEl = document.getElementById("list-el");
-const DeleteBtn = document.getElementById("delete-btn");
+let DeleteBtn = document.getElementById("delete-btn");
 
 // const LeadsFromLocalStorage = JSON.parse(localStorage.setItem("myLeads"));
 // console.log(LeadsFromLocalStorage);
@@ -33,9 +33,7 @@ function clearInput() {
 
 DeleteBtn.addEventListener("dblclick", function () {
   console.log("double click");
-  localStorage.clear();
   myLeads = [];
-  renderLeads();
 });
 
 SaveInput.addEventListener("click", function () {
