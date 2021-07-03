@@ -6,6 +6,7 @@ let ListEl = document.getElementById("list-el");
 const DeleteBtn = document.getElementById("delete-btn");
 
 const LeadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+
 console.log(LeadsFromLocalStorage);
 
 if (LeadsFromLocalStorage) {
