@@ -27,8 +27,13 @@ button {
   border-radius: 5px;
   text-decoration: white;
   padding: 10px 20px 10px 20px;
-  border: none;
+  border: 1px solid green;
   font-weight: bolder;
+}
+
+#delete-btn {
+  background: white;
+  color: green;
 }
 
 #list-el {
