@@ -4,7 +4,7 @@ const myLeads = [];
 const InputEl = document.getElementById("input-el");
 let ListEl = document.getElementById("list-el");
 
-localStorage.setItem("myLeads");
+JSON.parse(localStorage.setItem("myLeads"));
 
 function renderLeads() {
   let ListItems = "";
