@@ -38,3 +38,22 @@ SaveInput.addEventListener("click", function () {
   // clear out input field
   clearInput();
 });
+
+function deleteLeads() {
+  let ListItems = "";
+  for (let i = 0; i < myLeads.length; i++) {
+    // ListItems +=
+    //   "<li><a href='" +
+    //   myLeads[i] +
+    //   "' target='_blank'>" +
+    //   myLeads[i] +
+    //   "</a></li>";
+    ListItems -= `
+          <li>
+              <a target='_blank' href='${myLeads[i]}'>${myLeads[i]}</a>
+          </li>`;
+
+    console.log(ListItems);
+  }
+  ListEl.innerHTML = ListItems;
+}
