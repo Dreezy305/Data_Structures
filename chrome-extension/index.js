@@ -4,7 +4,7 @@ const myLeads = [];
 const InputEl = document.getElementById("input-el");
 let ListEl = document.getElementById("list-el");
 
-localStorage.setItem("myLeads", "www.awesomelead.com");
+localStorage.setItem("myLeads");
 
 function renderLeads() {
   let ListItems = "";
