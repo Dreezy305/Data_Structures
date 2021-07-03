@@ -5,8 +5,8 @@ const InputEl = document.getElementById("input-el");
 let ListEl = document.getElementById("list-el");
 const DeleteBtn = document.getElementById("delete-btn");
 
-const LeadsFromLocalStorage = JSON.parse(localStorage.setItem("myLeads"));
-console.log(LeadsFromLocalStorage);
+// const LeadsFromLocalStorage = JSON.parse(localStorage.setItem("myLeads"));
+// console.log(LeadsFromLocalStorage);
 
 function renderLeads() {
   let ListItems = "";
