@@ -33,6 +33,9 @@ function clearInput() {
 
 DeleteBtn.addEventListener("dblclick", function () {
   console.log("double click");
+  localStorage.clear();
+  myLeads = [];
+  renderLeads();
 });
 
 SaveInput.addEventListener("click", function () {
