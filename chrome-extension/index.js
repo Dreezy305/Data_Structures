@@ -11,12 +11,12 @@ console.log(LeadsFromLocalStorage);
 
 if (LeadsFromLocalStorage) {
   myLeads = LeadsFromLocalStorage;
-  renderLeads();
+  render(myLeads);
 }
 
-function renderLeads() {
+function render(leads) {
   let ListItems = "";
-  for (let i = 0; i < myLeads.length; i++) {
+  for (let i = 0; i < leads.length; i++) {
     // ListItems +=
     //   "<li><a href='" +
     //   myLeads[i] +
@@ -25,7 +25,7 @@ function renderLeads() {
     //   "</a></li>";
     ListItems += `
           <li>
-              <a target='_blank' href='${myLeads[i]}'>${myLeads[i]}</a>
+              <a target='_blank' href='${leads[i]}'>${leads[i]}</a>
           </li>`;
 
     console.log(ListItems);
@@ -41,16 +41,14 @@ DeleteBtn.addEventListener("dblclick", function () {
   console.log("double click");
   localStorage.clear();
   myLeads = [];
-  renderLeads();
+  render(myLeads);
 });
 
 SaveInput.addEventListener("click", function () {
   console.log("button clicked");
   myLeads.push(InputEl.value);
   console.log(myLeads);
-  renderLeads();
+  render(myLeads);
   // clear out input field
   clearInput();
 });
-
-function deleteLeads() {}
