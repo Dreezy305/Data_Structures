@@ -1,4 +1,5 @@
 function ValleyCount(n, steps) {
+  n = 0;
   steps = "";
   let step = steps.split(",");
   console.log(step);
