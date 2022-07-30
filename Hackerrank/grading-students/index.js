@@ -13,6 +13,7 @@ function gradingStudents(grades) {
       let res = grades[key] + add;
       convResult.push(res);
     }
+
     if (add >= 3 && grades[key] >= 38) {
       convResult.push(grades[key]);
     }
