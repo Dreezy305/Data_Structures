@@ -3,6 +3,7 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
   const iteratorB = oranges.keys();
   let resultA = [];
   let resultB = [];
+
   for (const key of iteratorA) {
     let addA = a + apples[key];
     if (addA >= s && addA <= t) {
