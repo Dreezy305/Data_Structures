@@ -1,8 +1,8 @@
 function miniMaxSum(arr) {
-  let strn = " ";
-  let initialValue = 0;
+  let strn = " ";  // creates soace between the values
+  let initialValue = 0;   // initialises the first value to zero
 
-  let sort1 = arr.sort((a, b) => a - b);
+  let sort1 = arr.sort((a, b) => a - b);    // sorts array
   let slice1 = sort1.slice(1);
 
   let slice2 = sort1.slice(0, arr.length - 1);
