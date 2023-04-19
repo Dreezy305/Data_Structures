@@ -53,3 +53,56 @@ function last(params, num) {
   }
 }
 last([7, 9, 0, -2], 6);
+
+// SORT THE ARRAY
+function sortArray(params) {
+	const  compareNumbers = (a, b) => {
+  return a - b;
+}
+	const sorted = params.sort(compareNumbers)
+	return sorted
+}
+sortArray([ -3, 8, 7, 6, 5, -4, 3, 2, 1 ])
+
+
+// CONVERT STRING
+function convStr(params) {
+	let res;
+	const strArr = params.split("").forEach((item) => {
+		let i = []
+		if(/^[A-Z]*$/.test(item)) {
+			const value = item.toLowerCase()
+			i.push(value)
+		} else if (/^[a-z]*$/.test(item)) {
+			i.push(item.toUpperCase())
+		}
+		console.log(`${i.toString()}`)
+		return i.toString()
+	})
+	
+	console.log(strArr)
+}
+convStr("The Quick Brown Fox")
+
+
+// MOST FREQUENT
+function mostFrequent(arr) {
+  let freq = {};
+  let maxFreq = 0;
+  let maxItem = null;
+  
+  for (let item of arr) {
+    if (!freq[item]) {
+      freq[item] = 1;
+    } else {
+      freq[item]++;
+    }
+    if (freq[item] > maxFreq) {
+      maxFreq = freq[item];
+      maxItem = item;
+    }
+  }
+
+  return ""
+}
+mostFrequent([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3])
