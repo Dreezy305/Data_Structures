@@ -56,41 +56,39 @@ last([7, 9, 0, -2], 6);
 
 // SORT THE ARRAY
 function sortArray(params) {
-	const  compareNumbers = (a, b) => {
-  return a - b;
+  const compareNumbers = (a, b) => {
+    return a - b;
+  };
+  const sorted = params.sort(compareNumbers);
+  return sorted;
 }
-	const sorted = params.sort(compareNumbers)
-	return sorted
-}
-sortArray([ -3, 8, 7, 6, 5, -4, 3, 2, 1 ])
-
+sortArray([-3, 8, 7, 6, 5, -4, 3, 2, 1]);
 
 // CONVERT STRING
 function convStr(params) {
-	let res;
-	const strArr = params.split("").forEach((item) => {
-		let i = []
-		if(/^[A-Z]*$/.test(item)) {
-			const value = item.toLowerCase()
-			i.push(value)
-		} else if (/^[a-z]*$/.test(item)) {
-			i.push(item.toUpperCase())
-		}
-		console.log(`${i.toString()}`)
-		return i.toString()
-	})
-	
-	console.log(strArr)
-}
-convStr("The Quick Brown Fox")
+  let res;
+  const strArr = params.split("").forEach((item) => {
+    let i = [];
+    if (/^[A-Z]*$/.test(item)) {
+      const value = item.toLowerCase();
+      i.push(value);
+    } else if (/^[a-z]*$/.test(item)) {
+      i.push(item.toUpperCase());
+    }
+    console.log(`${i.toString()}`);
+    return i.toString();
+  });
 
+  console.log(strArr);
+}
+convStr("The Quick Brown Fox");
 
 // MOST FREQUENT
 function mostFrequent(arr) {
   let freq = {};
   let maxFreq = 0;
   let maxItem = null;
-  
+
   for (let item of arr) {
     if (!freq[item]) {
       freq[item] = 1;
@@ -103,9 +101,9 @@ function mostFrequent(arr) {
     }
   }
 
-  return ""
+  return "";
 }
-mostFrequent([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3])
+mostFrequent([3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3]);
 
 function rowElement(params) {
   // APPROACH 1
@@ -118,28 +116,41 @@ function rowElement(params) {
 
 // PRINT THE ELEMENTS OF ROW OF AN ARRAY (APPROACH 1)
 function rowElements(params) {
-	// APPROACH 1
-	const length = params.length 
-	for (let i = 0; i < length; i++) {
-		for (let j = 0; j < length; j++) {
-			// console.log("row"+ i)
-			// console.log(params[i][j])
-		}
-	}
+  // APPROACH 1
+  const length = params.length;
+  for (let i = 0; i < length; i++) {
+    for (let j = 0; j < length; j++) {
+      // console.log("row"+ i)
+      // console.log(params[i][j])
+    }
+  }
 }
 
 // SUM AND PRODUCTS OF AN ARRAY OF INTEGRER
 function sumAndProd(params) {
-	let initialValue = 0;
-	const sumAllProduct = params.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  initialValue
-);
+  let initialValue = 0;
+  const sumAllProduct = params.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    initialValue
+  );
 
-const timesAllProduct = params.reduce(
-  (accumulator, currentValue) => accumulator * currentValue
-);
-	return {sum: sumAllProduct, product: timesAllProduct}
+  const timesAllProduct = params.reduce(
+    (accumulator, currentValue) => accumulator * currentValue
+  );
+  return { sum: sumAllProduct, product: timesAllProduct };
 }
 
-sumAndProd([1,2,3,4,5,6])
+sumAndProd([1, 2, 3, 4, 5, 6]);
+
+// REMOVE DUPLICATE
+function removeDuplicate(params) {
+  // SORT THE ARRAY
+  const compareNumbers = (a, b) => {
+    return a - b;
+  };
+  const sorted = params.sort(compareNumbers);
+  const convToString = sorted.toString().replace(/\b(\w+)\b(?=.*\b\1\b)/g, "");
+  console.log(convToString);
+}
+
+removeDuplicate([1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6]);
