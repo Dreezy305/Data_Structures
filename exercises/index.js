@@ -164,7 +164,7 @@ removeDuplicate([1,2,2,4,5,4,7,8,7,3,6])
 
 
 // COLOR PICKERS 
-function colorPicker(param1, param2) {
+function colorPicker(param1) {
 	const iterator = param1.keys();
 	let statement = ""
 	for (const key of iterator) {
@@ -182,4 +182,4 @@ function colorPicker(param1, param2) {
 		console.log(statement + " " + param1[key])
     }
 }
-colorPicker( ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "], ["th","st","nd","rd"])
+colorPicker( ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "])
