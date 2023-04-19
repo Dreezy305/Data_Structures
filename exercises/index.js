@@ -144,16 +144,20 @@ sumAndProd([1, 2, 3, 4, 5, 6]);
 
 // REMOVE DUPLICATE
 function removeDuplicate(params) {
-	// SORT THE ARRAY
-	const  compareNumbers = (a, b) => {
-           return a - b;
-   }
-   const sorted = params.sort(compareNumbers)
-   const convToString = sorted.toString().replace(/\b(\w+)\b(?=.*\b\1\b)/g, "");
-	const splitStr = convToString.split("").filter((item) => item !== ",")
-	// const result = splitStr.filter((item) => item !== ",")
-	console.log(splitStr)
-  return splitStr
+  // SORT THE ARRAY
+  const compareNumbers = (a, b) => {
+    return a - b;
+  };
+  const sorted = params.sort(compareNumbers);
+  const convToString = sorted
+    .toString()
+    .replace(/\b(\w+)\b(?=.*\b\1\b)/g, "")
+    .split("")
+    .filter((item) => item !== ",");
+  // const splitStr = convToString.split("").filter((item) => item !== ",")
+  // const result = splitStr.filter((item) => item !== ",")
+  console.log(convToString);
+  return convToString;
 }
 
 removeDuplicate([1,2,2,4,5,4,7,8,7,3,6])
