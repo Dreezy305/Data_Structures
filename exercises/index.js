@@ -106,3 +106,40 @@ function mostFrequent(arr) {
   return ""
 }
 mostFrequent([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3])
+
+function rowElement(params) {
+  // APPROACH 1
+  const length = params.length;
+  for (const element in params) {
+    console.log("row" + " " + element);
+    console.log(params[element]);
+  }
+}
+
+// PRINT THE ELEMENTS OF ROW OF AN ARRAY (APPROACH 1)
+function rowElements(params) {
+	// APPROACH 1
+	const length = params.length 
+	for (let i = 0; i < length; i++) {
+		for (let j = 0; j < length; j++) {
+			// console.log("row"+ i)
+			// console.log(params[i][j])
+		}
+	}
+}
+
+// SUM AND PRODUCTS OF AN ARRAY OF INTEGRER
+function sumAndProd(params) {
+	let initialValue = 0;
+	const sumAllProduct = params.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+const timesAllProduct = params.reduce(
+  (accumulator, currentValue) => accumulator * currentValue
+);
+	return {sum: sumAllProduct, product: timesAllProduct}
+}
+
+sumAndProd([1,2,3,4,5,6])
