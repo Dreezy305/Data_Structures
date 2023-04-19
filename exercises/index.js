@@ -161,3 +161,25 @@ function removeDuplicate(params) {
 }
 
 removeDuplicate([1,2,2,4,5,4,7,8,7,3,6])
+
+
+// COLOR PICKERS 
+function colorPicker(param1, param2) {
+	const iterator = param1.keys();
+	let statement = ""
+	for (const key of iterator) {
+		// HANDLE CHOICES
+		if (key+1 === 1 ) {
+			statement = `${key+1}st choice is`
+		} else if (key+1 === 2) {
+			statement = `${key+1}nd choice is`
+		} else if (key+1 === 3) {
+			statement = `${key+1}rd choice is`
+		} else {
+			statement = `${key+1}th choice is`
+		}
+
+		console.log(statement + " " + param1[key])
+    }
+}
+colorPicker( ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "], ["th","st","nd","rd"])
