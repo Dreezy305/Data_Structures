@@ -160,26 +160,52 @@ function removeDuplicate(params) {
   return convToString;
 }
 
-removeDuplicate([1,2,2,4,5,4,7,8,7,3,6])
+removeDuplicate([1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6]);
 
-
-// COLOR PICKERS 
+// COLOR PICKERS
 function colorPicker(param1) {
-	const iterator = param1.keys();
-	let statement = ""
-	for (const key of iterator) {
-		// HANDLE CHOICES
-		if (key+1 === 1 ) {
-			statement = `${key+1}st choice is`
-		} else if (key+1 === 2) {
-			statement = `${key+1}nd choice is`
-		} else if (key+1 === 3) {
-			statement = `${key+1}rd choice is`
-		} else {
-			statement = `${key+1}th choice is`
-		}
-
-		console.log(statement + " " + param1[key])
+  const iterator = param1.keys();
+  let statement = "";
+  for (const key of iterator) {
+    // HANDLE CHOICES
+    if (key + 1 === 1) {
+      statement = `${key + 1}st choice is`;
+    } else if (key + 1 === 2) {
+      statement = `${key + 1}nd choice is`;
+    } else if (key + 1 === 3) {
+      statement = `${key + 1}rd choice is`;
+    } else {
+      statement = `${key + 1}th choice is`;
     }
+
+    console.log(statement + " " + param1[key]);
+  }
 }
-colorPicker( ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "])
+colorPicker(["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "]);
+
+// ADD ELEMENTS OF ARRAY
+function addElements(arr1, arr2) {
+  const iterator = arr1.keys();
+  let result = [];
+  let length1 = arr1.length;
+  let length2 = arr2.length;
+  let lastEle1 = arr1[length1 - 1];
+  let lastEle2 = arr2[length2 - 1];
+  for (const key of iterator) {
+    let value = arr1[key] + arr2[key];
+    result.push(value);
+  }
+  if (length1 === length2) {
+    console.log(result);
+    return result;
+  } else if (length1 > length2) {
+    result.push(lastEle1);
+    console.log(result);
+    return result;
+  } else if (length2 > length1) {
+    result.push(lastEle2);
+    console.log(result);
+    return result;
+  }
+}
+addElements([1, 0, 2, 3, 4], [3, 5, 6, 7, 8, 13]);
