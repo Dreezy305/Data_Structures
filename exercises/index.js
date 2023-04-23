@@ -235,3 +235,23 @@ function flatten(params) {
   console.log(result);
 }
 flatten([1, [2], [3, [[4]]], [5, 6]]);
+
+// UNION OF TWO ARRAYS
+function union_of_arrays(arr1, arr2){
+	let frequency = {};
+	let join_and_sort = [];
+	if (arr1 && arr2) {
+		const  compareNumbers = (a, b) => {
+        return a - b;
+    }
+	join_and_sort = arr1.concat(arr2).sort(compareNumbers)
+	}
+	for (let i = 0; i < join_and_sort.length; i++) {
+	  const value = join_and_sort[i];
+	  frequency[value] = frequency[value] || 0;
+	  frequency[value]++;
+   }
+	let result = Object.keys(frequency).map((i) => parseInt(i))
+	return result
+}
+ union_of_arrays([1, 2, 3], [100, 2, 1, 10])
