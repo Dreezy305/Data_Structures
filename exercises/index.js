@@ -209,3 +209,22 @@ function addElements(arr1, arr2) {
   }
 }
 addElements([1, 0, 2, 3, 4], [3, 5, 6, 7, 8, 13]);
+
+// FIND DUPLICATE OF AN ARRAY
+function find_duplicate_in_array(arr) {
+  const frequency = {};
+  const duplicates = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    const value = arr[i];
+    frequency[value] = frequency[value] || 0;
+    frequency[value]++;
+
+    if (frequency[value] === 2) {
+      duplicates.push(value);
+    }
+  }
+  console.log(frequency);
+  console.log(duplicates);
+}
+find_duplicate_in_array([1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6]);
