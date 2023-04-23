@@ -275,7 +275,6 @@ function difference_of_arrays(arr1, arr2) {
     if (flat_arr1[key] !== flat_arr2[key]) {
       copy.push(flat_arr1[key]);
     }
-
     if (flat_arr2[key] !== flat_arr1[key]) {
       copy.push(flat_arr2[key]);
     }
