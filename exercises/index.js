@@ -237,21 +237,57 @@ function flatten(params) {
 flatten([1, [2], [3, [[4]]], [5, 6]]);
 
 // UNION OF TWO ARRAYS
-function union_of_arrays(arr1, arr2){
-	let frequency = {};
-	let join_and_sort = [];
-	if (arr1 && arr2) {
-		const  compareNumbers = (a, b) => {
-        return a - b;
-    }
-	join_and_sort = arr1.concat(arr2).sort(compareNumbers)
-	}
-	for (let i = 0; i < join_and_sort.length; i++) {
-	  const value = join_and_sort[i];
-	  frequency[value] = frequency[value] || 0;
-	  frequency[value]++;
-   }
-	let result = Object.keys(frequency).map((i) => parseInt(i))
-	return result
+function union_of_arrays(arr1, arr2) {
+  let frequency = {};
+  let join_and_sort = [];
+  if (arr1 && arr2) {
+    const compareNumbers = (a, b) => {
+      return a - b;
+    };
+    join_and_sort = arr1.concat(arr2).sort(compareNumbers);
+  }
+  for (let i = 0; i < join_and_sort.length; i++) {
+    const value = join_and_sort[i];
+    frequency[value] = frequency[value] || 0;
+    frequency[value]++;
+  }
+  let result = Object.keys(frequency).map((i) => parseInt(i));
+  return result;
 }
- union_of_arrays([1, 2, 3], [100, 2, 1, 10])
+union_of_arrays([1, 2, 3], [100, 2, 1, 10]);
+
+// DIFFERENCE OF 2 ARRAYS
+function difference_of_arrays(arr1, arr2) {
+  // FLAT ARRAYS
+  let flat_arr1 = arr1.flat(Infinity).sort((a, b) => a - b);
+  let flat_arr2 = arr2.flat(Infinity).sort((a, b) => a - b);
+  let length_arr1 = flat_arr1.length;
+  let length_arr2 = flat_arr2.length;
+  let copy = [];
+  let result = [];
+
+  if (length_arr1 < length_arr2) {
+    copy = flat_arr2.splice(length_arr1);
+  }
+
+  if (length_arr1 > length_arr2) {
+    copy = flat_arr1.splice(length_arr2);
+  }
+  const iterator = flat_arr1.keys();
+  for (const key of iterator) {
+    if (flat_arr1[key] !== flat_arr2[key]) {
+      copy.push(flat_arr1[key]);
+    }
+
+    if (flat_arr2[key] !== flat_arr1[key]) {
+      copy.push(flat_arr2[key]);
+    }
+  }
+
+  result = copy.sort((a, b) => a - b);
+  console.log(result);
+  return result;
+}
+
+difference_of_arrays([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]);
+difference_of_arrays([1, 2, 3], [100, 2, 1, 10]);
