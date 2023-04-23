@@ -303,3 +303,30 @@ function remove_undefined(params) {
   return result;
 }
 remove_undefined([NaN, 0, 15, false, -22, "", undefined, 47, null]);
+
+// SORT BY TITLE
+function sort_by_title(params) {
+  let a = "Mockingjay: The Final Book of The Hunger Games";
+  let b = "Walter Isaacson";
+  let result = params.sort((a, b) => {
+    if (a.title < b.title) {
+      return -1;
+    }
+    if (a.title > b.title) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+  console.log(result);
+  return result;
+}
+sort_by_title([
+  { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
+  { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    libraryID: 3245,
+  },
+]);
