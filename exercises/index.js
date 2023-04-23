@@ -330,3 +330,19 @@ sort_by_title([
     libraryID: 3245,
   },
 ]);
+
+
+// FIND PAIR THAT ADDS UP TO A TARGET VALUE
+function pair_up(params) {
+	let res = ""
+	for (let i = 0; i < params.length; i++) {
+		for (j = i + 1; j < params.length; j++) {
+			if (params[i] + params[j] === 50) {
+				res = `${i},${j}`
+			}
+		}
+	}
+	console.log(res)
+}
+
+pair_up([10,20,10,40,50,60,70])
