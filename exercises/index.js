@@ -228,3 +228,10 @@ function find_duplicate_in_array(arr) {
   console.log(duplicates);
 }
 find_duplicate_in_array([1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6]);
+
+// FLAT AN ARRAY IN JS
+function flatten(params) {
+  let result = params.flat(Infinity);
+  console.log(result);
+}
+flatten([1, [2], [3, [[4]]], [5, 6]]);
