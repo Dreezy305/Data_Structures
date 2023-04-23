@@ -240,12 +240,11 @@ flatten([1, [2], [3, [[4]]], [5, 6]]);
 function union_of_arrays(arr1, arr2) {
   let frequency = {};
   let join_and_sort = [];
+
   if (arr1 && arr2) {
-    const compareNumbers = (a, b) => {
-      return a - b;
-    };
-    join_and_sort = arr1.concat(arr2).sort(compareNumbers);
+    join_and_sort = arr1.concat(arr2).sort((a, b) => a - b);
   }
+
   for (let i = 0; i < join_and_sort.length; i++) {
     const value = join_and_sort[i];
     frequency[value] = frequency[value] || 0;
