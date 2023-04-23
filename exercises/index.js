@@ -265,11 +265,9 @@ function difference_of_arrays(arr1, arr2) {
   let length_arr2 = flat_arr2.length;
   let copy = [];
   let result = [];
-
   if (length_arr1 < length_arr2) {
     copy = flat_arr2.splice(length_arr1);
   }
-
   if (length_arr1 > length_arr2) {
     copy = flat_arr1.splice(length_arr2);
   }
@@ -283,7 +281,6 @@ function difference_of_arrays(arr1, arr2) {
       copy.push(flat_arr2[key]);
     }
   }
-
   result = copy.sort((a, b) => a - b);
   console.log(result);
   return result;
@@ -291,3 +288,20 @@ function difference_of_arrays(arr1, arr2) {
 
 difference_of_arrays([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]);
 difference_of_arrays([1, 2, 3], [100, 2, 1, 10]);
+
+// REMOVE NULL AND FALSE
+function remove_undefined(params) {
+  let result = [];
+  result = params.filter(
+    (i) =>
+      i !== NaN &&
+      i !== false &&
+      i !== "" &&
+      i !== undefined &&
+      i !== null &&
+      !isNaN(i)
+  );
+  console.log(result);
+  return result;
+}
+remove_undefined([NaN, 0, 15, false, -22, "", undefined, 47, null]);
