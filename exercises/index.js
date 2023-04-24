@@ -334,7 +334,7 @@ sort_by_title([
 
 // FIND PAIR THAT ADDS UP TO A TARGET VALUE
 function pair_up(params) {
-	let res = ""
+	let result = ""
 	for (let i = 0; i < params.length; i++) {
 		for (j = i + 1; j < params.length; j++) {
 			if (params[i] + params[j] === 50) {
@@ -342,7 +342,8 @@ function pair_up(params) {
 			}
 		}
 	}
-	console.log(res)
+  console.log(result)
+  return result
 }
 
 pair_up([10,20,10,40,50,60,70])
