@@ -315,10 +315,8 @@ function sort_by_title(params) {
     if (a.title > b.title) {
       return 1;
     }
-    // a must be equal to b
     return 0;
   });
-  console.log(result);
   return result;
 }
 sort_by_title([
@@ -342,7 +340,6 @@ function pair_up(params) {
 			}
 		}
 	}
-  console.log(result)
   return result
 }
 
