@@ -1,15 +1,21 @@
 function arrayManipulation(n, queries) {
-  // Write your code here
-  // create an array on n values
-  let arr = new Array(n).fill(0);
-  let output = 0;
-  queries.forEach(([a, b, k]) => {
-    console.log(b);
-    for (let i = a; i <= b; i++) {
-      arr[i] += k;
+  const arr = Array(n + 1);
+  let maxValue = 0,
+    currentNumber = 0;
+  queries.forEach(([startRange, endRange, value]) => {
+    arr[startRange] = arr[startRange] || { start: 0, end: 0 };
+    arr[endRange] = arr[endRange] || { start: 0, end: 0 };
+    arr[startRange].start += value;
+    arr[endRange].end += value;
+  });
+  arr.forEach((cell) => {
+    if (cell) {
+      currentNumber += cell.start;
+      if (currentNumber > maxValue) {
+        maxValue = currentNumber;
+      }
+      currentNumber -= cell.end;
     }
   });
-  output = Math.max(...arr);
-  console.log(output);
-  return output;
+  return maxValue;
 }
