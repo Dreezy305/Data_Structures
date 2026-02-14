@@ -17,13 +17,37 @@ function isValid(s) {
       if (s[i] === "]" && top !== "[") {
         return false;
       }
-      if (s[i] === "(" && top === "(") {
+    }
+  }
+
+  if (arrStack.length > 0) {
+    return false;
+  }
+  return true;
+}
+
+function isValidOptimized(s) {
+  let arrStack = [];
+  let map = {
+    ")": "(",
+    "}": "{",
+    "]": "[",
+  };
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "(" || s[i] === "{" || s[i] === "[") {
+      arrStack.push(s[i]);
+    } else {
+      if (arrStack.length === 0) {
+        return false;
+      }
+      let top = arrStack.pop();
+      if (map[s[i]] !== top) {
         return false;
       }
     }
   }
 
-  if (s.length === 1 || arrStack.length > 0) {
+  if (arrStack.length > 0) {
     return false;
   }
   return true;
